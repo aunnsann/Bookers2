@@ -16,17 +16,21 @@
      <%= form_with model: @user do |f| %>
       <div class="form-group">
      　 <label for="inputName">Name</label>
+     　<br>
     　  <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
       </div>
       <div class="form-group">
-    　  <label for="inputImage">Image</label>
+    　  <label for="profile_image">ProfileImage</label>
+    　  <br>
     　  <%= f.file_field :profile_image, placeholder: "プロフィール画像", accept: "image/*" %>
-      </div>
-      <div class="form-group">
+    　</div>
+    　<div class="form-group">
     　  <label for="inputIntroduction">Introduction</label>
+    　  <br>
     　  <%= f.text_field :introduction, autofocus: true, id:"inputIntroduction", placeholder:"自己紹介" %>
-   　   <%= f.submit "Update User" %>
-   　  </div>
+    　  <br>
+    　  <%= f.submit "Update User" %>
+      </dev>
   　  <% end %>
    </div>
   </div>
